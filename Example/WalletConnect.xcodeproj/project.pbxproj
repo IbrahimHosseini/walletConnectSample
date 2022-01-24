@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03F4D8B627847917004565B8 /* WalletConnect_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalletConnect_Example.entitlements; sourceTree = "<group>"; };
 		3CAB43573298CF6540303C70 /* Pods-WalletConnect_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletConnect_Example.debug.xcconfig"; path = "Target Support Files/Pods-WalletConnect_Example/Pods-WalletConnect_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		58018BFAC1E050DECC1E3B9B /* Pods_WalletConnect_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletConnect_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* WalletConnect_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletConnect_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +98,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				03F4D8B627847917004565B8 /* WalletConnect_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec */,
 				607FACD21AFB9204008FA782 /* WalletConnectApp */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -234,7 +236,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = FH9QG7ZJR9;
+						DevelopmentTeam = 947MCRBCME;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -245,6 +247,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 947MCRBCME;
 						LastSwiftMigration = 1020;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -548,14 +551,15 @@
 			baseConfigurationReference = 3CAB43573298CF6540303C70 /* Pods-WalletConnect_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WalletConnect_Example.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FH9QG7ZJR9;
+				DEVELOPMENT_TEAM = 947MCRBCME;
 				INFOPLIST_FILE = WalletConnect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.walletconnect.WalletConnect-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.walletconnect.universal-link";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -567,14 +571,16 @@
 			baseConfigurationReference = C5AB14183732ECC55F0DC926 /* Pods-WalletConnect_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WalletConnect_Example.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FH9QG7ZJR9;
+				DEVELOPMENT_TEAM = 947MCRBCME;
 				INFOPLIST_FILE = WalletConnect/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.walletconnect.WalletConnect-Example";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.walletconnect.universal-link";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -586,7 +592,7 @@
 			baseConfigurationReference = AF6FEF50E52A07BBD8821D45 /* Pods-WalletConnect_Tests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 947MCRBCME;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -606,7 +612,7 @@
 			baseConfigurationReference = 898BD455BC548305184BF04B /* Pods-WalletConnect_Tests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 947MCRBCME;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
